@@ -57,24 +57,34 @@ body {
   text-align: center;
   border-radius: 24px 24px 0 0;
   border: 1px solid rgba(74, 222, 128, 0.2);
-  background: linear-gradient(145deg, #0f4526 0%, #082010 100%);
   border-bottom: none;
   overflow: hidden;
-  /* Remove the padding from .hero here */
   padding: 0;
+  /* ADD THIS: Forces the hero to hold its shape */
+  min-height: 400px; 
 }
 
 .hero .banner {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 150px;
-  /* 100% 100% forces the image to stretch to the container boundaries */
-  background: url("./hero-bg.jpeg") center / 100% 100% no-repeat;
+  /* Use 'cover' to ensure it fills the space perfectly without distortion */
+  background-image: url("./hero-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* Add these to fix the flickering/jump */
   display: block;
+  z-index: 0;
+  will-change: transform;
 }
 
 .hero-content {
-  /* Apply the original padding here instead */
-  padding: 48px 32px 40px;
+  /* Add top padding to push content below the 150px banner */
+  padding: 180px 32px 40px; 
   position: relative;
   z-index: 1;
 }
