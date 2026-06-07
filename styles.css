@@ -90,6 +90,19 @@ body {
   z-index: 1;
 }
 
+@media (max-width: 480px) {
+  .hero .banner {
+    /* If the image looks distorted, you can adjust the height specifically for mobile */
+    height: 85px; 
+    background-size: contain;
+  }
+  
+  .hero-content {
+    /* Adjust padding to match the new banner height */
+    padding-top: 150px; 
+  }
+}
+
 /* Ensure the banner doesn't add extra space */
 .hero .banner {
   margin-bottom: 0; 
