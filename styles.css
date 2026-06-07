@@ -57,6 +57,7 @@ body {
   text-align: center;
   border-radius: 24px 24px 0 0;
   border: 1px solid rgba(74, 222, 128, 0.2);
+  background: linear-gradient(145deg, #0f4526 0%, #082010 100%);
   border-bottom: none;
   overflow: hidden;
   padding: 0;
