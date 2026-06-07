@@ -55,7 +55,7 @@ document.getElementById('pilotForm').addEventListener('submit', function(e) {
   }
 
   // Submission process
-  btn.textContent = 'Sending...';
+  btn.textContent = 'Processing...';
   btn.disabled = true;
 
   // Create hidden iframe to bypass CORS
