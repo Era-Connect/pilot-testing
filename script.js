@@ -21,7 +21,7 @@ document.getElementById('pilotForm').addEventListener('submit', function(e) {
   
   const form = e.target;
   const btn = form.querySelector('button[type="submit"]');
-  const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxZ4CAElHZagYEAM6z4qEcWqGwvrzdqrHvFU5ERfZIzOyRJSwHzA1itPpnpiWhz6ii7/exec";
+  const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzSdsWwWPZgOB9lOr0jAo74_58nFpyL66B903M5IrndnWuVPw_ltdkeDqUd5fOZSbGL/exec";
   let valid = true;
 
   // Clear previous errors
